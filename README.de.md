@@ -23,7 +23,7 @@ Er zeigt alle Plugins des Total Commanders als Dateien in einem Panel und lässt
 - **Reihenfolge ändern:** in den Eigenschaften (Enter) die Pfeil-Buttons neben der Position benutzen (oder die Tasten Hoch und Runter), die neue Position eintippen, oder den Eintrag umbenennen (Umschalt+F6) und die Zahl am Anfang ändern, zum Beispiel `05 Synta` in `01 Synta`. Nur Lister- und Inhalts-Plugins haben eine Reihenfolge.
 - **Eigenschaften** (Enter): bei Lister- und Inhalts-Plugins werden die Endungen des Detect Strings als Kontrollkästchen angezeigt, zusammen mit denen, die das Plugin selbst vorschlägt; an- oder abhaken, *Alle* / *Keine* benutzen. Andere Teile des Detect Strings (`FORCE`, `SIZE<…`, Gruppen) bleiben unverändert in einem Feld darunter. Bei Packern sind die Kontrollkästchen die Endungen, für die der Packer registriert ist; eine Endung, die ein anderer Packer benutzt, wechselt zu diesem.
 - Derselbe Dialog hat einen Schalter *Pfad mit %COMMANDER_PATH% speichern*: der Plugin-Pfad wird als `%COMMANDER_PATH%\plugins\…` (portabel) oder als absoluter Pfad gespeichert.
-- **Info** in der Wurzel zeigt den Über-Dialog, **Einstellungen** öffnet die Einstellungen: Darstellung (Auto / Hell / Dunkel), Sprache (Auto / Deutsch / English), ob neue Plugins mit `%COMMANDER_PATH%` gespeichert werden, und die Benachrichtigungen – vor dem Installieren fragen, Bestätigung nach erfolgreicher Installation, vor dem Löschen fragen, Bestätigung nach dem Löschen.
+- **Info** in der Wurzel zeigt den Über-Dialog, **Einstellungen** öffnet die Einstellungen: Darstellung (Auto / Hell / Dunkel), Sprache (Auto / Deutsch / English), ob neue Plugins mit `%COMMANDER_PATH%` gespeichert werden, ob nur die zur Bitbreite des Total Commanders passenden Dateien kopiert werden (32 oder 64 Bit), eine Schaltfläche *Aufräumen*, die ungenutzte 32-/64-Bit-Dateien registrierter Plugins in den Papierkorb verschiebt, und die Benachrichtigungen – vor dem Installieren fragen, Bestätigung nach erfolgreicher Installation, vor dem Löschen fragen, Bestätigung nach dem Löschen.
 
 Änderungen werden in `wincmd.ini` geschrieben (und in die Datei, auf die sie die Plugin-Abschnitte umleitet); eine Kopie der vorherigen Datei bleibt als `*.plugins-bak` erhalten. Der Total Commander übernimmt sie nach einem Neustart.
 
@@ -34,7 +34,7 @@ Helles und dunkles Design im Windows-11-Stil, Oberfläche auf Deutsch und Englis
 1. **`Plugins.zip`** vom [neuesten Release](https://github.com/naderi/tc-plugins/releases/latest) herunterladen.
 2. Das ZIP im Total Commander öffnen (Enter auf der Datei) und die Frage nach der Installation des Plugins bestätigen.
 
-Voraussetzung: Total Commander 32 oder 64 Bit unter Windows 10 oder 11. Die Einstellungen stehen in `fsplugin.ini` neben `wincmd.ini`, Abschnitt `[Plugins]` (`Theme`, `Language`, `StorePathWithVariable`, `AskBeforeInstall`, `MessageAfterInstall`, `AskBeforeUninstall`, `MessageAfterUninstall`).
+Voraussetzung: Total Commander 32 oder 64 Bit unter Windows 10 oder 11. Die Einstellungen stehen in `fsplugin.ini` neben `wincmd.ini`, Abschnitt `[Plugins]` (`Theme`, `Language`, `StorePathWithVariable`, `OnlyOwnBitness`, `AskBeforeInstall`, `MessageAfterInstall`, `AskBeforeUninstall`, `MessageAfterUninstall`).
 
 ## Lizenz
 

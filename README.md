@@ -23,7 +23,7 @@ Open *Plugins* from Network Neighborhood / the file system list.
 - **Reorder:** in the properties (Enter) use the arrow buttons next to the position (or the Up and Down keys), type the new position, or rename the entry (Shift+F6) and change the number at the start, for example `05 Synta` to `01 Synta`. Only lister and content plugins use an order.
 - **Properties** (Enter): for lister and content plugins the extensions of the detect string are shown as check boxes together with the ones the plugin proposes itself; tick or untick them, use *All* / *None*. Other terms of the detect string (`FORCE`, `SIZE<…`, groups) stay as they are in a field below. For packers the check boxes are the extensions the packer is registered for; an extension that another packer uses moves over to this one.
 - The same dialog has a switch *Use COMMANDER_PATH variable*: the plugin path is stored as `%COMMANDER_PATH%\plugins\…` (portable) or as an absolute path.
-- **Info** in the root shows the about dialog, **Settings** opens the settings: theme (automatic / light / dark), language (automatic / German / English), whether new plugins are stored with `%COMMANDER_PATH%`, and the notifications – ask before installing, confirmation after a successful installation, ask before deleting, confirmation after deleting.
+- **Info** in the root shows the about dialog, **Settings** opens the settings: theme (automatic / light / dark), language (automatic / German / English), whether new plugins are stored with `%COMMANDER_PATH%`, whether only the files matching Total Commander's bit width are copied (32 or 64 bit), a *Clean up* button that moves unused 32/64-bit files of registered plugins to the Recycle Bin, and the notifications – ask before installing, confirmation after a successful installation, ask before deleting, confirmation after deleting.
 
 Changes are written to `wincmd.ini` (and the file it redirects the plugin sections to); a copy of the previous file is kept as `*.plugins-bak`. Total Commander applies them after a restart.
 
@@ -34,7 +34,7 @@ Light and dark design in the Windows 11 look, English and German user interface 
 1. Download **`Plugins.zip`** from the [latest release](https://github.com/naderi/tc-plugins/releases/latest).
 2. Open the ZIP in Total Commander (Enter on the file) and confirm the question whether to install the plugin.
 
-Requires Total Commander 32 or 64 bit on Windows 10 or 11. Settings are stored in `fsplugin.ini` next to `wincmd.ini`, section `[Plugins]` (`Theme`, `Language`, `StorePathWithVariable`, `AskBeforeInstall`, `MessageAfterInstall`, `AskBeforeUninstall`, `MessageAfterUninstall`).
+Requires Total Commander 32 or 64 bit on Windows 10 or 11. Settings are stored in `fsplugin.ini` next to `wincmd.ini`, section `[Plugins]` (`Theme`, `Language`, `StorePathWithVariable`, `OnlyOwnBitness`, `AskBeforeInstall`, `MessageAfterInstall`, `AskBeforeUninstall`, `MessageAfterUninstall`).
 
 ## License
 
