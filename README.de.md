@@ -44,6 +44,14 @@ Voraussetzung: Total Commander 32 oder 64 Bit unter Windows 10 oder 11. Die Eins
 
 Total Commander hält ein Dateisystem-Plugin bis zum Beenden geladen, deshalb lässt sich Plugins.wfx / Plugins.wfx64 bei laufendem Total Commander nicht überschreiben (das Panel des Plugins zu verlassen genügt nicht). Entweder Total Commander beenden und die neue Version installieren, oder die geladene Datei umbenennen (zum Beispiel in `Plugins.wfx64.old`), die neue daneben kopieren und Total Commander neu starten. Windows erlaubt das Umbenennen einer geladenen DLL; die `.old`-Datei danach löschen.
 
+## Sprachen
+
+Plugins gibt es auf Englisch, Deutsch, Spanisch, Französisch, Russisch, Ukrainisch, Chinesisch (vereinfacht), Hindi, Portugiesisch und Persisch. Es folgt der Windows-Anzeigesprache; eine andere Sprache wählst du über die Einstellungen des Plugins (*Sprache*) oder mit `Language=<Name oder Kürzel>` im Abschnitt `[Plugins]` der `fsplugin.ini` (zum Beispiel `Persian` oder `fa`; `auto` folgt Windows).
+
+Die Texte stehen in einfachen `.lng`-Dateien im Ordner `Languages`. Für eine neue Sprache kopierst du `Languages\Template.lng`, übersetzt die rechten Seiten und speicherst sie unter einem neuen Namen – sie erscheint dann in der Sprachliste.
+
+Korrekturen und neue Übersetzungen von Muttersprachlern sind sehr willkommen – schick sie bitte als [Issue](https://github.com/naderi/tc-plugins/issues) in diesem Repository.
+
 ## Lizenz
 
 Freeware – frei nutzbar, aber **nicht zum Verkauf**. Siehe [LICENSE](LICENSE).
