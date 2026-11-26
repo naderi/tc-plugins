@@ -46,7 +46,7 @@ Total Commander hält ein Dateisystem-Plugin bis zum Beenden geladen, deshalb l�
 
 ## Sprachen
 
-Plugins gibt es auf Englisch, Deutsch, Spanisch, Französisch, Russisch, Ukrainisch, Chinesisch (vereinfacht), Hindi, Portugiesisch und Persisch. Es folgt der Windows-Anzeigesprache; eine andere Sprache wählst du über die Einstellungen des Plugins (*Sprache*) oder mit `Language=<Name oder Kürzel>` im Abschnitt `[Plugins]` der `fsplugin.ini` (zum Beispiel `Persian` oder `fa`; `auto` folgt Windows, `tc` der Sprache von Total Commander – auch als Eintrag *Wie Total Commander*).
+Plugins gibt es auf Englisch, Deutsch, Spanisch, Französisch, Russisch, Ukrainisch, Chinesisch (vereinfacht), Hindi, Portugiesisch, Persisch und Dänisch. Es folgt der Windows-Anzeigesprache; eine andere Sprache wählst du über die Einstellungen des Plugins (*Sprache*) oder mit `Language=<Name oder Kürzel>` im Abschnitt `[Plugins]` der `fsplugin.ini` (zum Beispiel `Persian` oder `fa`; `auto` folgt Windows, `tc` der Sprache von Total Commander – auch als Eintrag *Wie Total Commander*).
 
 Die Texte stehen in einfachen `.lng`-Dateien im Ordner `Languages`. Für eine neue Sprache kopierst du `Languages\Template.lng`, übersetzt die rechten Seiten und speicherst sie unter einem neuen Namen – sie erscheint dann in der Sprachliste.
 

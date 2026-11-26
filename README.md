@@ -46,7 +46,7 @@ Total Commander keeps a file system plugin loaded until it exits, so Plugins.wfx
 
 ## Languages
 
-Plugins speaks English, German, Spanish, French, Russian, Ukrainian, Chinese (Simplified), Hindi, Portuguese and Persian. It follows the Windows display language; to pick another one, use the plugin's settings (*Language*) or set `Language=<name or code>` in the `[Plugins]` section of `fsplugin.ini` (for example `Persian` or `fa`; `auto` follows Windows, `tc` follows Total Commander's own language – also the entry *Like Total Commander*).
+Plugins speaks English, German, Spanish, French, Russian, Ukrainian, Chinese (Simplified), Hindi, Portuguese, Persian and Danish. It follows the Windows display language; to pick another one, use the plugin's settings (*Language*) or set `Language=<name or code>` in the `[Plugins]` section of `fsplugin.ini` (for example `Persian` or `fa`; `auto` follows Windows, `tc` follows Total Commander's own language – also the entry *Like Total Commander*).
 
 The texts are plain `.lng` files in the `Languages` folder. To add a language, copy `Languages\Template.lng`, translate the right-hand sides and save it under a new name – it appears in the language list.
 
